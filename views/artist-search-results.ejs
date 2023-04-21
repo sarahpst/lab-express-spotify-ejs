@@ -1,0 +1,12 @@
+
+<% items.forEach((item) => { %>
+<div><%- item.name %></div>
+<div>
+  <% if(item.images.length >0){%>
+  <img src='<%- item.images[0].url %>' width="100" />
+  <% } %>
+</div>
+<button>
+    <a href='/albums/<%-item.id%>'>View Albums</a>
+</button>
+<% }) %>
