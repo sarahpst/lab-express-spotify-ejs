@@ -1,0 +1,17 @@
+<div id="page-albums">
+  <% items.forEach((album) => { %>
+  <div class="box">
+    <div>
+      <% if(album.images.length >0){%>
+      <img src="<%- album.images[0].url %>" width="100" />
+    </div>
+    <% } %>
+    <div class="name"><%- album.name %></div>
+    <div>
+      <button type="button">
+        <a href="/tracks/<%-album.id%>">View tracks</a>
+      </button>
+    </div>
+  </div>
+  <% }) %>
+</div>

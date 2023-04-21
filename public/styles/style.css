@@ -1,0 +1,87 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-size: 14px;
+}
+
+#page-home {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../images/spotify-background.jpeg");
+  background-size: cover;
+}
+
+.box-search {
+  background: rgb(10 10 10 / 82%);
+  padding: 40px;
+  border-radius: 4px;
+}
+#page-home input {
+  padding: 8px 12px;
+  border-radius: 2px;
+  border: 0;
+  margin-right: 14px;
+}
+
+button {
+  background: #1ddf63;
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: bold;
+}
+
+#page-artists,
+#page-albums {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  padding: 20px;
+  background: rgb(10 10 10 / 82%);
+  margin: 10px;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 160px;
+  
+}
+
+.box img {
+  width: 120px;
+}
+
+.name {
+  color: #fff;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+button a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#page-tracks {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nameTracks {
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.box audio::-webkit-media-controls-panel {
+  background-color: #1ddf63;
+}

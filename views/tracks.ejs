@@ -1,0 +1,10 @@
+<div id="page-tracks">
+  <% items.forEach(track => { %>
+  <div class="box">
+    <div class="nameTracks"><%- track.name%></div>
+    <audio controls src=" <%- track.preview_url %> ">
+      <a href="<%- track.preview_url %>"> Download audio </a>
+    </audio>
+  </div>
+  <%})%>
+</div>
